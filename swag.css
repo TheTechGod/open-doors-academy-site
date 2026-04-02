@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+}
+/* NAV */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(4, 12, 28, 0.88);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    align-items: center;
+    padding: 18px 40px;
+}
+
+.navbar a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.cta {
+    background: #3b82f6;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 6px;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero-buttons button {
+    margin: 10px;
+    padding: 12px 20px;
+    border-radius: 6px;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(59,130,246,0.15), transparent 70%);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.primary {
+    background: #3b82f6;
+    border: none;
+    color: white;
+    background: linear-gradient(135deg, #2563eb, #60a5fa);
+    border: none;
+    box-shadow: 0 12px 30px rgba(37, 99, 235, 0.45);
+    transition: all 0.25s ease;
+}
+
+.primary:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 18px 45px rgba(37, 99, 235, 0.6);
+}
+
+.secondary {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.hero-preview {
+    margin-top: 50px;
+}
+
+.preview-card {
+    background: rgba(15, 23, 42, 0.85);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 25px 30px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    width: 320px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* FEATURES */
+.features {
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* HOW */
+.how {
+    padding: 60px 20px;
+    text-align: center;
+    background: rgba(255,255,255,0.02);
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* WHO */
+.who {
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.who-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* ROADMAP */
+.roadmap {
+    background: rgba(255,255,255,0.02);
+    text-align: center;
+}
+
+.roadmap-subtext {
+    max-width: 760px;
+    margin: 0 auto 40px;
+    color: #cddbf7;
+    font-size: 1.05rem;
+}
+
+.roadmap-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.roadmap-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 22px;
+    padding: 28px 24px;
+    text-align: left;
+    box-shadow: 0 14px 35px rgba(0,0,0,0.18);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border 0.25s ease;
+}
+
+.roadmap-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 22px 45px rgba(0,0,0,0.24);
+    border: 1px solid rgba(96,165,250,0.24);
+}
+
+.roadmap-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.roadmap-card p {
+    color: #dce8ff;
+    font-size: 0.98rem;
+    line-height: 1.6;
+}
+
+/* CTA */
+.final-cta {
+    padding: 60px 20px;
+    text-align: center;
+}
+.cta-subtext {
+    max-width: 720px;
+    margin: 0 auto 28px;
+    font-size: 1.08rem;
+    color: #dce8ff;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-main {
+    padding: 16px 28px;
+    font-size: 1.05rem;
+}
+
+.cta-alt {
+    padding: 16px 24px;
+}
+
+/* FOOTER */
+.footer {
+    padding: 36px 20px 30px;
+    text-align: center;
+    background: rgba(2, 6, 23, 0.95);
+    border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.footer-inline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    color: #c5d4f3;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.footer-divider {
+    color: rgba(255,255,255,0.35);
+}
+
+.footer-sub {
+    color: rgba(197, 212, 243, 0.72);
+    font-size: 0.9rem;
+    margin-top: 6px;
+    letter-spacing: 0.01em;
+}
